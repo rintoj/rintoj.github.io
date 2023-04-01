@@ -1,0 +1,9 @@
+{
+  "theme_color": "#9013fe",
+  "background_color": "#ffffff",
+  "display": "fullscreen",
+  "scope": "/games/math",
+  "start_url": "/games/math",
+  "name": "Games",
+  "short_name": "Math"
+}
