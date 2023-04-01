@@ -39,7 +39,8 @@ function prepareQuestion() {
   operatorDiv.innerHTML = operator
   correctAnswerInput.value = correctAnswer
   answerInput.value = ''
-  correctAnswerInput.type = 'hidden'
+  answerInput.placeholder = '0'
+  setAnswerStatus()
 }
 
 function setAnswerStatus(status) {
@@ -53,6 +54,9 @@ function setAnswerStatus(status) {
       answerInput.classList.remove('correct')
       answerInput.classList.add('incorrect')
       break;
+    default:
+      answerInput.classList.remove('correct')
+      answerInput.classList.remove('incorrect')
   }
 }
 
@@ -63,7 +67,7 @@ function submit() {
   const correctAnswer = correctAnswerInput.value
   const isCorrect = answer === correctAnswer
   setAnswerStatus(isCorrect ? 'correct' : 'incorrect')
-  correctAnswerInput.type = 'number'
+  answerInput.placeholder = correctAnswer
 }
 
 prepareQuestion()
