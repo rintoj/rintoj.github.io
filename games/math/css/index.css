@@ -1,0 +1,62 @@
+
+.outer-container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding: 32px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.number, .operator {
+  font-size: 36px;
+}
+
+.number {
+  color: green
+}
+
+.operator {
+  color: darkolivegreen;
+}
+
+.answer-input {
+  border: 1px solid gainsboro;
+  border-radius: 8px;
+  font-size: 36px;
+  width: 140px;
+  padding: 8px;
+}
+
+.correct-answer-input {
+  border: none;
+  font-size: 15px;
+  width: 140px;
+  padding: 8px;
+  color: gray;
+  background-color: transparent;
+}
+
+.incorrect {
+  border: 1px solid red;
+  color: red;
+}
+
+.correct {
+  border: 1px solid green;
+  color: green;
+}
+
+button {
+  background: cadetblue;
+  color: white;
+  font-weight: bold;
+  width: 140px;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 8px;
+}
